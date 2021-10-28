@@ -10,6 +10,8 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .accordion__item:last-child {
@@ -19,17 +21,14 @@
 .accordion__summary {
     display: block;
     line-height: 24px;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    margin-left: 32px;
-    margin-right: 539.14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
 }
 
 .accordion__content {
-    margin-top: 16px;
-    margin-bottom: 32px;
-    margin-left: 32px;
-    margin-right: 48.69px;
+    margin: 0;
+    padding-bottom: 32px;
     color: var(--grey-4);
 }
 
