@@ -20,18 +20,23 @@
 
 
   .skeleton__item {
-      width: 515px;
       height: 20px;
       background: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--gradient-1) 38.47%, var(--gradient-2) 56.48%, var(--gradient-3) 77.5%, var(--grey-2) 102.52%);
       margin-bottom: 8px;
       flex-grow: 1;
+      width: 100%;
       
   }
 
 .skeleton__item_small {
-    width: 172px
+    width: 33.4%
   }
 
 .skeleton__item_medium {
-    width: 257px
+    width: 49.9%
+  }
+
+.skeleton__header {
+  display: flex;
+  flex-wrap: nowrap;
   }
