@@ -1,0 +1,9 @@
+.preview {
+    background-color: var(--grey-5);
+    padding: 68px 0 204px;
+    display: flex;
+}
+
+.preview__card {
+    margin: 15px;
+}
