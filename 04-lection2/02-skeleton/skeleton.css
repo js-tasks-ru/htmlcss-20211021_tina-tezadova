@@ -29,14 +29,23 @@
   }
 
 .skeleton__item_small {
-    width: 33.4%
+    width: 33%
   }
 
 .skeleton__item_medium {
-    width: 49.9%
+    width: 50%
   }
 
 .skeleton__header {
   display: flex;
   flex-wrap: nowrap;
+  }
+
+.items-container {
+ padding-top: 8px;
+ width: 515px;
+  }
+
+.items-container2 {
+  width: 515px;
   }
