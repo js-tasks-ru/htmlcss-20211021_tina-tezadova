@@ -15,12 +15,13 @@
     flex-wrap: wrap;
     align-content: flex-start;
     box-sizing: border-box;
-    padding: 16px 24px 24px 24px
+    padding: 16px 24px 24px 24px;
+    flex-direction: column
 }
 
 .histogram__title {
     margin: 0;
-    width: 200px;
+
 }
 
 .histogram__link {
@@ -35,6 +36,7 @@
  flex-grow: 1;
  
 }
+
 
 
 .histogram__amount {
