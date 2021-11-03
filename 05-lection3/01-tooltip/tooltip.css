@@ -25,7 +25,8 @@
     position: absolute;
     white-space: nowrap;
     left: 50%;
-    transform: translate(-50%, -85px);
+    bottom: 0;
+    transform: translate(-50%, -35px);
 }
 
 .tooltip__bubble:before {
@@ -36,11 +37,6 @@
     bottom: 0;
     transform: translate(-50%, 100%);
     border-top: 6px solid var(--blue-2);
-}
-
-body {
-    text-align: center;
-    padding-top: 80px;
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
