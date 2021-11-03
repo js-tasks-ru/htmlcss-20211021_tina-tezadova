@@ -44,8 +44,10 @@
 .items-container {
  padding-top: 8px;
  width: 515px;
+
   }
 
-.items-container2 {
-  width: 515px;
+.skeleton__footer {
+  max-width: 515px;
+  width: 100%;
   }
