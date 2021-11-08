@@ -1,0 +1,81 @@
+.histogram {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    max-width: 354px;
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
+    padding: 16px 24px 24px 24px;
+    flex-direction: column
+}
+
+.histogram__title {
+    margin: 0;
+}
+
+.histogram__link {
+    color: var(--blue-2);
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.histogram__amount {
+    font-family: Inter, sans-serif;
+    /* Если удалить дублирующиеся свойства текста, то свойства из histogram не применяются к данному тексту */
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black);
+    padding-bottom: 39px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.histogram__chart {
+    height: 50px;
+    display: flex;
+    padding-left: 2px;
+    align-items: end;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.histogram__chart__item {
+    flex-basis: 9px;
+    background-color: var(--blue-2);
+    display: block;
+    margin: 0 1px 0 0;
+    box-sizing: border-box;
+    flex-shrink: 1;
+}
+
+.histogram_preview {
+    width: 100%;
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: var(--white);
+    padding: 16px 24px 24px 24px;
+}
+
+.histogram__amount_preview {
+    font-weight: 600;
+}
