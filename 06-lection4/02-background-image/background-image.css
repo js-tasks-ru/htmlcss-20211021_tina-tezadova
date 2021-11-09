@@ -1,0 +1,37 @@
+
+
+@media screen and (max-width: 1024px) {
+    .background-img {
+        max-width: 100%;
+        overflow: hidden;
+        background-image: url('../02-background-image/public/forest_1024.jpg');
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .background-img {
+        max-width: 100%;
+        overflow: hidden;
+        background-image: url('../02-background-image/public/forest_400.jpg');
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background-img {
+        max-width: 100%;
+        overflow: hidden;
+        background-image: url('../02-background-image/public/forest_768.jpg');
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 2560px) {
+    .background-img {
+        max-width: 100%;
+        overflow: hidden;
+        background-image: url('../02-background-image/public/forest_2560.jpg');
+        background-repeat: no-repeat;
+    }
+}
