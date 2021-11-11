@@ -37,7 +37,6 @@
     display: flex;
     flex-direction: column;
     column-gap: 4px;
-   
 }
 
 .menu__item {
@@ -46,7 +45,6 @@
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
-    
 }
 
 .menu__item_active {
@@ -55,6 +53,17 @@
 
 .component {
     background-color: var(--white);
+    padding: 32px 0 0 48px;
+}
+
+.component__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
 }
 
 .page__footer {
