@@ -29,3 +29,10 @@
     text-transform: uppercase;
     color: var(--grey-3);
 }
+
+.footer_component-page {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

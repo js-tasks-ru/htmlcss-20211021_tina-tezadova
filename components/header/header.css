@@ -11,3 +11,8 @@
     color: var(--black);
     margin: 0;
 }
+
+.header_component-page {
+    height: 82px;
+    background-color: var(--white);
+}
