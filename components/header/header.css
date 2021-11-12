@@ -22,6 +22,8 @@
         font-weight: normal;
         font-size: 28px;
         line-height: 38px;
+        white-space: pre-wrap;
+        
     }
 
     .header__inner {
@@ -33,4 +35,6 @@
         display: inline-block;
         
     }
+
+  
 }
