@@ -18,16 +18,34 @@
     padding-bottom: 16px;
 }
 
+.accordion__item > .accordion__summary > .accordion__icon_open{
+    display: block;
+}
+
+.accordion__item > .accordion__summary > .accordion__icon_close{
+    display: none;
+}
+
+.accordion__item[open] > .accordion__summary > .accordion__icon_open{
+    display: none;
+}
+
+.accordion__item[open] > .accordion__summary > .accordion__icon_close{
+    display: block;
+}
+
+
 .accordion__item:last-child {
     margin-bottom: 0;
 }
 
 .accordion__summary {
-    display: block;
     line-height: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .accordion__content {
@@ -36,4 +54,8 @@
     color: var(--grey-4);
 }
 
-
+.accordion__icon {
+    height: 24px;
+    width: 24px;
+    color: var(--grey-4)
+}
