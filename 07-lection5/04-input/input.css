@@ -67,9 +67,9 @@
 
 
 
-.input:focus~.input__state .input__label {
+/* .input:focus~.input__state .input__label {
     border-bottom: 1px solid var(--blue-2);
-}
+} */
 
 
 
@@ -88,7 +88,38 @@
 }
 
 .input_error~.input__state .input__control {
-    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     border: 1px solid #F03D3E;
 }
 
+
+
+.input__form {
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 350px;
+    height: 56px;
+    position: relative;
+    background-image: url('../../assets/images/IconHelp/Help.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+.input__form:focus {
+    outline: none;
+    border-color: var(--blue-2);
+    
+}
+
+input::placeholder {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 20px;
+    line-height: 26px;
+    color: #DDE2E5; 
+    text-align: center;
+}
