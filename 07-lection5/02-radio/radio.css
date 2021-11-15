@@ -67,5 +67,5 @@
 }
 
 .radio__input:focus ~ .radio__state .radio__label{
-    border-bottom: 1px solid var(--blue-2);
+    border-bottom: 1px solid var(--blue-2)
 }
