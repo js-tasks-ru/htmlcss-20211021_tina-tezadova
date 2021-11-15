@@ -1,0 +1,94 @@
+.input {
+    display: inline-block;
+}
+
+.input__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+    outline: none;
+}
+
+.input__state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input__control {
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 350px;
+    height: 56px;
+    position: relative;
+}
+
+ .input__icon {
+    position: absolute;
+    left: 92%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.input__label {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: #ACB5BD;
+    margin-left: 12px;
+    text-transform: uppercase;
+}
+
+.input__placeholder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #DDE2E5;
+}
+
+.input__input:focus~.input__state .input__control {
+    
+    border-color: var(--blue-2);
+}
+
+
+
+
+
+.input:focus~.input__state .input__label {
+    border-bottom: 1px solid var(--blue-2);
+}
+
+
+
+.input__success-icon, .input__error-icon {
+    display: none;
+}
+
+.input_success~.input__state .input__success-icon {
+    
+    display: block;
+}
+
+.input_error~.input__state .input__error-icon {
+    
+    display: block;
+}
+
+.input_error~.input__state .input__control {
+    
+    border: 1px solid #F03D3E;
+}
+
