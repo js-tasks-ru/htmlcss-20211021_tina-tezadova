@@ -24,7 +24,8 @@
     position: absolute;
     right: 1rem;
     top: 1rem;
-    pointer-events: auto;
+    pointer-events: auto; 
+
 }
 
 
@@ -49,4 +50,10 @@ line-height: 24px;
 color: var(--grey-4);
 
 
+}
+
+.modal__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-4);
 }
