@@ -18,19 +18,19 @@
     padding-bottom: 16px;
 }
 
-.accordion__item > .accordion__summary > .accordion__icon_open{
+.accordion__icon_open{
     display: block;
 }
 
-.accordion__item > .accordion__summary > .accordion__icon_close{
+.accordion__icon_close{
     display: none;
 }
 
-.accordion__item[open] > .accordion__summary > .accordion__icon_open{
+.accordion__item[open]  .accordion__icon_open{
     display: none;
 }
 
-.accordion__item[open] > .accordion__summary > .accordion__icon_close{
+.accordion__item[open] .accordion__icon_close{
     display: block;
 }
 
