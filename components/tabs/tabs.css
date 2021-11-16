@@ -1,0 +1,76 @@
+.tabs {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tabs__input {
+   position: absolute;
+   clip: rect(0, 0, 0, 0);
+   opacity: 0;
+   outline: none;
+
+}
+
+ .tab__state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+
+} 
+
+
+.tab__label {
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    cursor: pointer;
+    
+}
+
+
+
+
+.tabs__input:not(:checked)  ~ .tab__label-container .tab__label::after {
+    display: none;
+}
+.tabs__input:checked ~ .tab__label-container .tab__label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    background-color: var(--black);
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs__menu {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.tabs__menu > li {
+    margin-right: 40px;
+}
+
+.tab__label-container {
+    cursor: pointer;
+    position: relative;
+}
