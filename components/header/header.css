@@ -1,7 +1,7 @@
 .header {
-    background-color: var(--white);
-    padding: 96px 0 77px;
+    background-color: var(--white); /* //padding: 96px 0 77px */;
 }
+
 .header__title {
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -15,4 +15,31 @@
 .header_component-page {
     height: 82px;
     background-color: var(--white);
+
+}
+
+.header__icon {
+    padding: 25px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__title {
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 38px;
+        white-space: pre-wrap;
+        
+    }
+
+    .header__inner {
+        display: flex;
+        justify-content: center;
+        position: relative;}
+    
+    .header__icon {
+        display: inline-block;
+        
+    }
+
+  
 }

@@ -15,6 +15,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
     --grey-6: #334D6E;
     --grey-7: #90A0B7;
     --grey-9: #334D6E;
@@ -35,8 +36,24 @@
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 15px;
     box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 350px 350px;
+        justify-content: center;
+        
+    }
+
+  
 }
