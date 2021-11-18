@@ -43,7 +43,7 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #DDE2E5;
+    background-color: var(--grey-2);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -55,7 +55,7 @@
     left: 100%;
     top: 50%;
     transform: translate(-100%, -50%);
-    background-color: white
+    background-color: var(--white);
  }
 
  .toggle__input:disabled ~ .toggle__state .toggle__icon{
@@ -64,7 +64,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-100%, -50%);
-    background-color: #ACB5BD;
+    background-color: var(--grey-3);
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__control{
