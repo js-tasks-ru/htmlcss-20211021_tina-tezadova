@@ -18,6 +18,7 @@
     --gradient-1: #E2E6E8;
     --gradient-2: #F3F5F5;
     --gradient-3: #E3E7EA;
+    --grey-5: #F9FAFC;
     --grey-6: #334D6E;
     --grey-7: #90A0B7;
     --grey-9: #334D6E;
@@ -36,8 +37,24 @@
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 15px;
     box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 350px 350px;
+        justify-content: center;
+        
+    }
+
+  
 }
