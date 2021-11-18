@@ -2,22 +2,7 @@
     display: inline-block;
 }
 
-.input__state {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
-}
 
-.input__control {
-    background: var(--white);
-    border: 1px solid var(--grey-2);
-    box-sizing: border-box;
-    border-radius: 8px;
-    width: 350px;
-    height: 56px;
-    position: relative;
-}
 
 .input__label {
     font-family: Inter, sans-serif;
@@ -42,14 +27,7 @@
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
-}
-
-.input__form:focus {
-    outline: none;
-    border-color: var(--blue-2);
-}
-
-input {
+    padding: 17px 0 13px 24px;
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -58,7 +36,12 @@ input {
     color: var(--grey-4);
 }
 
-input::placeholder {
+.input__form:focus {
+    outline: none;
+    border-color: var(--blue-2);
+}
+
+.input__form::placeholder {
     color: var(--grey-2);
     text-align: center;
 }
