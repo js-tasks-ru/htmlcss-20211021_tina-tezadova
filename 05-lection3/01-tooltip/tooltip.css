@@ -42,3 +42,7 @@
 .tooltip__trigger:hover ~ .tooltip__bubble {
     display: block;
 }
+
+.tooltip_preview >  .tooltip__trigger ~ .tooltip__bubble {
+    display: block;
+}

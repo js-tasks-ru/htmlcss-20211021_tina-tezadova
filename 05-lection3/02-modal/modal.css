@@ -57,3 +57,23 @@ color: var(--grey-4);
     height: 24px;
     color: var(--grey-4);
 }
+
+.modal_preview {
+    display: block;
+    position: relative;
+    transform: none;
+    flex: 1 0 auto;
+    
+    top: 0;
+    left: 0;
+    
+    pointer-events: none;
+    padding: 1em;
+    background-color: white;
+
+}
+
+.modal_preview > .modal__container {
+    border: 1px  solid var(--grey-3);
+    width: 180px;
+} 
