@@ -1,0 +1,57 @@
+.input {
+    display: inline-block;
+}
+
+
+
+.input__label {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: var(--grey-3);
+    margin-left: 12px;
+    text-transform: uppercase;
+}
+
+.input__form {
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 350px;
+    height: 56px;
+    position: relative;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    padding: 17px 0 13px 24px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4);
+}
+
+.input__form:focus {
+    outline: none;
+    border-color: var(--blue-2);
+}
+
+.input__form::placeholder {
+    color: var(--grey-2);
+    text-align: center;
+}
+
+
+.input_error {
+    background-image: url('../../assets/images/IconError/alert-triangle.png');
+    border-color: var(--red);
+}
+
+.input_success {
+    background-image: url('../../assets/images/IconSuccess/check-circle.png');
+}
