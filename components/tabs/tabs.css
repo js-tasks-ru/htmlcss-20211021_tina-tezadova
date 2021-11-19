@@ -31,6 +31,8 @@
     line-height: 24px;
     color: var(--black);
     cursor: pointer;
+    padding: 0.5rem 0;
+    display: inline-flex;
     
 }
 
@@ -40,9 +42,9 @@
 .tabs__input:not(:checked)  ~ .tab__label-container .tab__label::after {
     display: none;
 }
-.tabs__input:checked ~ .tab__label-container .tab__label::after {
+.tab__label::after {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     height: 5px;
     width: 100%;
@@ -51,11 +53,7 @@
 }
 
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 
 .tabs__menu {
     height: 40px;
@@ -66,11 +64,46 @@ ul {
     cursor: pointer;
 }
 
-.tabs__menu > li {
+.tabs__menu-item {
     margin-right: 40px;
+    display: inline-block;
 }
 
 .tab__label-container {
     cursor: pointer;
     position: relative;
 }
+
+.tab_all:checked ~ .tabs__content_complex {
+    display: block;
+}
+
+.tab_elements:checked ~ .tabs__content_complex {
+    display: none;
+}
+
+.tab_containers:checked ~ .tabs__content_complex {
+    display: none;
+}
+
+.tab_templates:checked ~ .tabs__content_complex {
+    display: none;
+}
+
+.tab_all:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #all-tab-label::after {
+    
+    display: block;
+    
+}
+
+.tab_elements:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #elements-tab-label::after {
+    display: block;
+} 
+
+.tab_containers:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #containers-tab-label::after {
+    display: block;
+}
+
+.tab_templates:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #templates-tab-label::after {
+    display: block;
+} 
