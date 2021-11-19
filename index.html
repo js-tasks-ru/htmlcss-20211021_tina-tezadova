@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./components/preview/preview.css">
     <link rel="stylesheet" href="./components/card/card.css">
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+    <link rel="stylesheet" href="./components/tabs/tabs.css">
 
 </head>
 
@@ -30,100 +31,150 @@
             
             <h1 class="header__title">Reusable component library</h1>
         </div>
+        
     </header>
     <main>
-        <div class="previw">
-            <div class="container main-container">
-                <div class="card preview__card">
-                    <div class="card__body"></div>
-                    <div class="card__footer">
-                        <p class="card__title">Tooltip</p>
+       
+        <div class="tabs">
+            <input type="radio" name="check" class="tabs__input tabs__tab_all" id='all-tab' checked>
+            <input type="radio" name="check" class="tabs__input tabs__tab_elements" id="elements-tab">
+            <input type="radio" name="check" class="tabs__input tabs__tab_containers" id="containers-tab">
+            <input type="radio"  name="check"  class="tabs__input tabs__tab_templates" id="templates-tab">
+            <nav class="tabs__nav">
+            <div class="container">
+            <div class="tabs__tab-state">
+            <div class="tabs__menu">
+                <div class="tabs__menu-item">
+                    <div class="tabs__tab-label-container">
+                        <label class="tabs__tab-label" for="all-tab" id="all-tab-label">All components</label>
                     </div>
-                    
-                </div>
-                <div class="card preview__card">
-                    <div class="card__body"></div>
-                    <div class="card__footer">
-                        <p class="card__title">Custom form elements</p>
-                    </div>
-                    
-                </div>
-                <div class="card preview__card">
-                    <div class="card__body"></div>
-                    <div class="card__footer">
-                        <p class="card__title">Calendar</p>
-                    </div>
-                    
-                </div>
-                <div class="card preview__card">
-                    <div class="card__body">
-                        
-                    </div>
-                    <div class="card__footer">
-                        <p class="card__title">Modal dialog</p>
-                    </div>
-                    
-                </div>
-                <div class="card preview__card">
-                    <div class="card__body">
-                        <div class="histogram histogram_preview">
-                            <div class="histogram__header">
-                                <span class="histogram__title ">Total orders</span>
-                                <span class="histogram__link">View all</span>
-                            </div>       
-                             <div>
-                                <h4 class="histogram__amount histogram__amount_preview">50254</h4>
-                            </div>
-                                       
-                            <div class="histogram__chart">
-                                <div class="histogram__chart__item" style="height: 100%"></div>
-                                <div class="histogram__chart__item" style="height: 70%"></div>
-                                <div class="histogram__chart__item" style="height: 44%"></div>
-                                <div class="histogram__chart__item" style="height: 78%"></div>
-                                <div class="histogram__chart__item" style="height: 44%"></div>
-                                <div class="histogram__chart__item" style="height: 60%"></div>
-                                <div class="histogram__chart__item" style="height: 78%"></div>
-                                <div class="histogram__chart__item" style="height: 100%"></div>
-                                <div class="histogram__chart__item" style="height: 22%"></div>
-                                <div class="histogram__chart__item" style="height: 44%"></div>
-                                <div class="histogram__chart__item" style="height: 60%"></div>
-                                <div class="histogram__chart__item" style="height: 70%"></div>
-                                <div class="histogram__chart__item" style="height: 22%"></div>
-                                <div class="histogram__chart__item" style="height: 100%"></div>
-                                <div class="histogram__chart__item" style="height: 22%"></div>
-                                <div class="histogram__chart__item" style="height: 78%"></div>
-                                <div class="histogram__chart__item" style="height: 60%"></div>
-                                <div class="histogram__chart__item" style="height: 44%"></div>
-                                <div class="histogram__chart__item" style="height: 70%"></div>
-                                <div class="histogram__chart__item" style="height: 60%"></div>
-                                <div class="histogram__chart__item" style="height: 22%"></div>
-                                <div class="histogram__chart__item" style="height: 78%"></div>
-                                <div class="histogram__chart__item" style="height: 70%"></div>
-                                <div class="histogram__chart__item" style="height: 90%"></div>
-                                <div class="histogram__chart__item" style="height: 60%"></div>
-                                <div class="histogram__chart__item" style="height: 22%"></div>
-                                <div class="histogram__chart__item" style="height: 60%"></div>
-                                <div class="histogram__chart__item" style="height: 22%"></div>
-                                <div class="histogram__chart__item" style="height: 70%"></div>
-                                <div class="histogram__chart__item" style="height: 34%"></div>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="card__footer">
-                        <p class="card__title">Histogram</p>
-                    </div>
-                    
-                </div>
-                <div class="card preview__card">
-                    <div class="card__body"></div>
-                    <div class="card__footer">
-                        <p class="card__title">Avatar</p>
-                    </div>
-                    
+                
+            </div>
+            <div class="tabs__menu-item">
+                <div class="tabs__tab-label-container">
+                    <label class="tabs__tab-label" for="elements-tab" id="elements-tab-label">Elements</label>
                 </div>
             </div>
-
+            <div class="tabs__menu-item">
+                <div class="tabs__tab-label-container">
+                    <label class="tabs__tab-label" for="containers-tab" id="containers-tab-label">Containers</label>
+                </div>
+                
+            </div>
+            <div class="tabs__menu-item">
+                <div class="tabs__tab-label-container">
+                    <label class="tabs__tab-label" for="templates-tab" id="templates-tab-label">Templates</label>
+                </div>
+                
+            </div>
+            </div>
         </div>
+        </div>
+    </nav>
+            <div class="tabs__content tabs__content_complex">
+                <div class="preview" >
+                    <div class="container main-container">
+                        <div class="card preview__card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <p class="card__title">Tooltip</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card preview__card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <p class="card__title">Custom form elements</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card preview__card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <p class="card__title">Calendar</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card preview__card">
+                            <div class="card__body">
+                                
+                            </div>
+                            <div class="card__footer">
+                                <p class="card__title">Modal dialog</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card preview__card">
+                            <div class="card__body">
+                                <div class="histogram histogram_preview">
+                                    <div class="histogram__header">
+                                        <span class="histogram__title ">Total orders</span>
+                                        <span class="histogram__link">View all</span>
+                                    </div>       
+                                     <div>
+                                        <h4 class="histogram__amount histogram__amount_preview">50254</h4>
+                                    </div>
+                                               
+                                    <div class="histogram__chart">
+                                        <div class="histogram__chart__item" style="height: 100%"></div>
+                                        <div class="histogram__chart__item" style="height: 70%"></div>
+                                        <div class="histogram__chart__item" style="height: 44%"></div>
+                                        <div class="histogram__chart__item" style="height: 78%"></div>
+                                        <div class="histogram__chart__item" style="height: 44%"></div>
+                                        <div class="histogram__chart__item" style="height: 60%"></div>
+                                        <div class="histogram__chart__item" style="height: 78%"></div>
+                                        <div class="histogram__chart__item" style="height: 100%"></div>
+                                        <div class="histogram__chart__item" style="height: 22%"></div>
+                                        <div class="histogram__chart__item" style="height: 44%"></div>
+                                        <div class="histogram__chart__item" style="height: 60%"></div>
+                                        <div class="histogram__chart__item" style="height: 70%"></div>
+                                        <div class="histogram__chart__item" style="height: 22%"></div>
+                                        <div class="histogram__chart__item" style="height: 100%"></div>
+                                        <div class="histogram__chart__item" style="height: 22%"></div>
+                                        <div class="histogram__chart__item" style="height: 78%"></div>
+                                        <div class="histogram__chart__item" style="height: 60%"></div>
+                                        <div class="histogram__chart__item" style="height: 44%"></div>
+                                        <div class="histogram__chart__item" style="height: 70%"></div>
+                                        <div class="histogram__chart__item" style="height: 60%"></div>
+                                        <div class="histogram__chart__item" style="height: 22%"></div>
+                                        <div class="histogram__chart__item" style="height: 78%"></div>
+                                        <div class="histogram__chart__item" style="height: 70%"></div>
+                                        <div class="histogram__chart__item" style="height: 90%"></div>
+                                        <div class="histogram__chart__item" style="height: 60%"></div>
+                                        <div class="histogram__chart__item" style="height: 22%"></div>
+                                        <div class="histogram__chart__item" style="height: 60%"></div>
+                                        <div class="histogram__chart__item" style="height: 22%"></div>
+                                        <div class="histogram__chart__item" style="height: 70%"></div>
+                                        <div class="histogram__chart__item" style="height: 34%"></div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <p class="card__title">Histogram</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card preview__card">
+                            <div class="card__body"></div>
+                            <div class="card__footer">
+                                <p class="card__title">Avatar</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class=“tabs__content tabs__content_simple”>
+                <!-- Простые компоненты -->
+            </div>
+        </div>
+
+
+
+
+
+        
     </main>
     <footer class="footer">
         <div class="container">
