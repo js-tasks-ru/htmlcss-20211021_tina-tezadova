@@ -12,10 +12,15 @@
     margin: 0;
 }
 
+.header_component-page {
+    height: 82px;
+    background-color: var(--white);
+
+}
+
 .header__icon {
     padding: 25px 0;
 }
-
 
 @media screen and (max-width: 1024px) {
     .header__title {
