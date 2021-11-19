@@ -35,7 +35,7 @@
     align-items: center;
 }
 
-.card__body__grid-container {
+.card__body-grid-container {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
