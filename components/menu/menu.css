@@ -1,0 +1,32 @@
+.menu {
+    width: 229px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__title {
+    margin-bottom: 1rem;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.menu__items {
+    display: flex;
+    flex-direction: column;
+    column-gap: 4px;
+}
+
+.menu__item {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.menu__item_active {
+    color: var(--orange);
+}

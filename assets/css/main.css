@@ -19,6 +19,8 @@
     --grey-6: #334D6E;
     --grey-7: #90A0B7;
     --grey-9: #334D6E;
+    --grey-10: #F9FAFC;
+    --orange: #D84910;
 
     --error: var(--red);
     --success: var(--blue);
@@ -40,7 +42,19 @@
 }
 
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 30px;
     
+}
+
+
+@media screen and (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 350px 350px;
+        justify-content: center;
+        
+    }
+
+  
 }

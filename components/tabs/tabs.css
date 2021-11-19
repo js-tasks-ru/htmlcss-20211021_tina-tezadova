@@ -1,0 +1,109 @@
+.tabs {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tabs__input {
+   position: absolute;
+   clip: rect(0, 0, 0, 0);
+   opacity: 0;
+   outline: none;
+
+}
+
+ .tabs__tab-state {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+
+} 
+
+
+.tabs__tab-label {
+
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    cursor: pointer;
+    padding: 0.5rem 0;
+    display: inline-flex;
+    
+}
+
+
+
+
+.tabs__input:not(:checked)  ~ .tabs__tab-label-container .tabs__tab-label::after {
+    display: none;
+}
+.tabs__tab-label::after {
+    content: '';
+    display: none;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    background-color: var(--black);
+}
+
+
+
+
+.tabs__menu {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.tabs__menu-item {
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.tabs__tab-label-container {
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs__tab_all:checked ~ .tabs__content_complex {
+    display: block;
+}
+
+.tabs__tab_elements:checked ~ .tabs__content_complex {
+    display: none;
+}
+
+.tabs__tab_containers:checked ~ .tabs__content_complex {
+    display: none;
+}
+
+.tabs__tab_templates:checked ~ .tabs__content_complex {
+    display: none;
+}
+
+.tabs__tab_all:checked ~ .tabs__nav #all-tab-label::after {
+    
+    display: block;
+    
+}
+
+.tabs__tab_elements:checked ~ .tabs__nav #elements-tab-label::after {
+    display: block;
+} 
+
+.tabs__tab_containers:checked ~ .tabs__nav  #containers-tab-label::after {
+    display: block;
+}
+
+.tabs__tab_templates:checked ~ .tabs__nav  #templates-tab-label::after {
+    display: block;
+} 
