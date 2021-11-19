@@ -13,7 +13,7 @@
 
 }
 
- .tab__state {
+ .tabs__tab-state {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -22,7 +22,7 @@
 } 
 
 
-.tab__label {
+.tabs__tab-label {
 
     font-family: Inter, sans-serif;
     font-style: normal;
@@ -39,10 +39,10 @@
 
 
 
-.tabs__input:not(:checked)  ~ .tab__label-container .tab__label::after {
+.tabs__input:not(:checked)  ~ .tabs__tab-label-container .tabs__tab-label::after {
     display: none;
 }
-.tab__label::after {
+.tabs__tab-label::after {
     content: '';
     display: none;
     position: absolute;
@@ -69,41 +69,41 @@
     display: inline-block;
 }
 
-.tab__label-container {
+.tabs__tab-label-container {
     cursor: pointer;
     position: relative;
 }
 
-.tab_all:checked ~ .tabs__content_complex {
+.tabs__tab_all:checked ~ .tabs__content_complex {
     display: block;
 }
 
-.tab_elements:checked ~ .tabs__content_complex {
+.tabs__tab_elements:checked ~ .tabs__content_complex {
     display: none;
 }
 
-.tab_containers:checked ~ .tabs__content_complex {
+.tabs__tab_containers:checked ~ .tabs__content_complex {
     display: none;
 }
 
-.tab_templates:checked ~ .tabs__content_complex {
+.tabs__tab_templates:checked ~ .tabs__content_complex {
     display: none;
 }
 
-.tab_all:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #all-tab-label::after {
+.tabs__tab_all:checked ~ .tabs__nav #all-tab-label::after {
     
     display: block;
     
 }
 
-.tab_elements:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #elements-tab-label::after {
+.tabs__tab_elements:checked ~ .tabs__nav #elements-tab-label::after {
     display: block;
 } 
 
-.tab_containers:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #containers-tab-label::after {
+.tabs__tab_containers:checked ~ .tabs__nav  #containers-tab-label::after {
     display: block;
 }
 
-.tab_templates:checked ~ .tabs__nav > .container > .tab__state > .tabs__menu > .tabs__menu-item > .tab__label-container >  #templates-tab-label::after {
+.tabs__tab_templates:checked ~ .tabs__nav  #templates-tab-label::after {
     display: block;
 } 
